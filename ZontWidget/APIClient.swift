@@ -97,7 +97,7 @@ class ZontSetIOPortRequest: ZontRequest {
     
     var type: String { return "unknown" }
     var portName: String { return "unknown" }
-    var value: String { return "unknown" }
+    var value: Any { return "unknown" }
     
     init(deviceId: String) {
         self.deviceId = deviceId
@@ -109,7 +109,7 @@ class ZontGuardStateRequest: ZontSetIOPortRequest {
     
     override var portName: String { return "guard-state" }
     override var type: String { return "string" }
-    override var value: String { return guardEnabled ? "enabled" : "disabled" }
+    override var value: Any { return guardEnabled ? "enabled" : "disabled" }
     
     init(deviceId: String, guardEnabled: Bool) {
         self.guardEnabled = guardEnabled
@@ -122,7 +122,7 @@ class ZontAutoIgnitionRequest: ZontSetIOPortRequest {
     
     override var portName: String { return "auto-ignition" }
     override var type: String { return "auto-ignition" }
-    override var value: String { return autoIgnitionEnabled ? "enabled" : "disabled" }
+    override var value: Any { return ["state" : autoIgnitionEnabled ? "enabled" : "disabled"] }
     
     init(deviceId: String, autoIgnitionEnabled: Bool) {
         self.autoIgnitionEnabled = autoIgnitionEnabled
