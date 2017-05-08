@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15C26B6DA780007EE7E661BA /* Pods_ZontExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B800B02EBED2503ABA2C1E0 /* Pods_ZontExtension.framework */; };
+		586030186A2A6D177E802693 /* ZontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586034BC704F914159F66F94 /* ZontExtensions.swift */; };
+		586034C3A16047C089D95C6C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C341E93A78300B68974 /* APIClient.swift */; };
+		5860373C7187D8D0CC71E4EA /* ZontExtensionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58603C2048D20946868E482D /* ZontExtensionViewModel.swift */; };
+		5860374EDEE87E3215F2F55C /* ZontError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C391E93C1E200B68974 /* ZontError.swift */; };
+		58603871987FD5C2C700488D /* ZontDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C371E93B23100B68974 /* ZontDevice.swift */; };
+		58603BE5FBF0C9C893635BDB /* ZontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C2F1E93A1F900B68974 /* ZontManager.swift */; };
+		58603CA748DE053D78B51B24 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C401E95028D00B68974 /* Constants.swift */; };
+		58603D050D459371074A5CBB /* ZontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586034BC704F914159F66F94 /* ZontExtensions.swift */; };
+		58603DBFA30D3802DCD25834 /* ZontZTC700Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C3E1E94F76000B68974 /* ZontZTC700Device.swift */; };
+		58603E6E5C6B91B6CA574E63 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586037BA5BE45989F70C7F86 /* TodayViewController.swift */; };
+		7222CAC9AE80D4AEF66B1A6B /* Pods_ZontWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FE9C47C957896AF18D38C7 /* Pods_ZontWidget.framework */; };
+		844E1C301E93A1F900B68974 /* ZontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C2F1E93A1F900B68974 /* ZontManager.swift */; };
+		844E1C331E93A44900B68974 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C321E93A44900B68974 /* Extensions.swift */; };
+		844E1C351E93A78300B68974 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C341E93A78300B68974 /* APIClient.swift */; };
+		844E1C381E93B23100B68974 /* ZontDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C371E93B23100B68974 /* ZontDevice.swift */; };
+		844E1C3A1E93C1E200B68974 /* ZontError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C391E93C1E200B68974 /* ZontError.swift */; };
+		844E1C3D1E93D5B500B68974 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C3C1E93D5B500B68974 /* DevicesViewModel.swift */; };
+		844E1C3F1E94F76000B68974 /* ZontZTC700Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C3E1E94F76000B68974 /* ZontZTC700Device.swift */; };
+		844E1C411E95028D00B68974 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E1C401E95028D00B68974 /* Constants.swift */; };
+		84564F7A1E8B9C6F00DE618C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84564F791E8B9C6F00DE618C /* AppCoordinator.swift */; };
+		84BFD9331E89715600118754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFD9321E89715600118754 /* AppDelegate.swift */; };
+		84BFD9351E89715600118754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFD9341E89715600118754 /* ViewController.swift */; };
+		84BFD93A1E89715600118754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BFD9391E89715600118754 /* Assets.xcassets */; };
+		84BFD93D1E89715600118754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BFD93B1E89715600118754 /* LaunchScreen.storyboard */; };
+		84BFD94B1E8971B000118754 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BFD94A1E8971B000118754 /* NotificationCenter.framework */; };
+		84BFD9511E8971B000118754 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BFD94F1E8971B000118754 /* MainInterface.storyboard */; };
+		84BFD9551E8971B000118754 /* ZontExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84BFD9481E8971B000118754 /* ZontExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84BFD95D1E8B96A800118754 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFD95C1E8B96A800118754 /* Coordinator.swift */; };
+		84D251851EBB99D700CC6F27 /* ZontSetIOPortResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D251841EBB99D700CC6F27 /* ZontSetIOPortResult.swift */; };
+		84D251861EBB9F6A00CC6F27 /* ZontSetIOPortResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D251841EBB99D700CC6F27 /* ZontSetIOPortResult.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84BFD9531E8971B000118754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BFD9271E89715600118754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84BFD9471E8971B000118754;
+			remoteInfo = ZontExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84BFD9591E8971B000118754 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84BFD9551E8971B000118754 /* ZontExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B800B02EBED2503ABA2C1E0 /* Pods_ZontExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZontExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F73A893F3DBF3EDC06E77D8 /* Pods-ZontExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZontExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZontExtension/Pods-ZontExtension.release.xcconfig"; sourceTree = "<group>"; };
+		586034BC704F914159F66F94 /* ZontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZontExtensions.swift; sourceTree = "<group>"; };
+		586037BA5BE45989F70C7F86 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		58603C2048D20946868E482D /* ZontExtensionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZontExtensionViewModel.swift; sourceTree = "<group>"; };
+		6021241F853C8909B6769757 /* Pods-ZontExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZontExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZontExtension/Pods-ZontExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		71FE9C47C957896AF18D38C7 /* Pods_ZontWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZontWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E8D0EF01A30BA96AB56C35 /* Pods-ZontWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZontWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZontWidget/Pods-ZontWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		844E1C2F1E93A1F900B68974 /* ZontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZontManager.swift; sourceTree = "<group>"; };
+		844E1C321E93A44900B68974 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		844E1C341E93A78300B68974 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		844E1C371E93B23100B68974 /* ZontDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZontDevice.swift; sourceTree = "<group>"; };
+		844E1C391E93C1E200B68974 /* ZontError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZontError.swift; sourceTree = "<group>"; };
+		844E1C3C1E93D5B500B68974 /* DevicesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
+		844E1C3E1E94F76000B68974 /* ZontZTC700Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZontZTC700Device.swift; sourceTree = "<group>"; };
+		844E1C401E95028D00B68974 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84564F791E8B9C6F00DE618C /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		84BFD92F1E89715600118754 /* ZontWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZontWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BFD9321E89715600118754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84BFD9341E89715600118754 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84BFD9391E89715600118754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84BFD93C1E89715600118754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84BFD93E1E89715600118754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BFD9481E8971B000118754 /* ZontExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZontExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BFD94A1E8971B000118754 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		84BFD9501E8971B000118754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		84BFD9521E8971B000118754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BFD95C1E8B96A800118754 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		84D251821EBB8B3800CC6F27 /* ZontWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZontWidget.entitlements; sourceTree = "<group>"; };
+		84D251831EBB8BC700CC6F27 /* ZontExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZontExtension.entitlements; sourceTree = "<group>"; };
+		84D251841EBB99D700CC6F27 /* ZontSetIOPortResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZontSetIOPortResult.swift; sourceTree = "<group>"; };
+		958A83269B944429D6251D5D /* Pods-ZontWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZontWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZontWidget/Pods-ZontWidget.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BFD92C1E89715600118754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7222CAC9AE80D4AEF66B1A6B /* Pods_ZontWidget.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BFD9451E8971B000118754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BFD94B1E8971B000118754 /* NotificationCenter.framework in Frameworks */,
+				15C26B6DA780007EE7E661BA /* Pods_ZontExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F32EEA5E06C41B4644681CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6021241F853C8909B6769757 /* Pods-ZontExtension.debug.xcconfig */,
+				3F73A893F3DBF3EDC06E77D8 /* Pods-ZontExtension.release.xcconfig */,
+				78E8D0EF01A30BA96AB56C35 /* Pods-ZontWidget.debug.xcconfig */,
+				958A83269B944429D6251D5D /* Pods-ZontWidget.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		586032D62D9678E2C1730835 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				58603C2048D20946868E482D /* ZontExtensionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5860339DAC2E31ED5F658CB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				586037BA5BE45989F70C7F86 /* TodayViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		844E1C2E1E93A1B900B68974 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				844E1C361E93ADB300B68974 /* Model */,
+				844E1C2F1E93A1F900B68974 /* ZontManager.swift */,
+				844E1C341E93A78300B68974 /* APIClient.swift */,
+				586034BC704F914159F66F94 /* ZontExtensions.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		844E1C311E93A43100B68974 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				844E1C321E93A44900B68974 /* Extensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		844E1C361E93ADB300B68974 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				844E1C371E93B23100B68974 /* ZontDevice.swift */,
+				844E1C391E93C1E200B68974 /* ZontError.swift */,
+				844E1C3E1E94F76000B68974 /* ZontZTC700Device.swift */,
+				84D251841EBB99D700CC6F27 /* ZontSetIOPortResult.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		844E1C3B1E93D57A00B68974 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				844E1C3C1E93D5B500B68974 /* DevicesViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		84BFD9261E89715600118754 = {
+			isa = PBXGroup;
+			children = (
+				84BFD9311E89715600118754 /* ZontWidget */,
+				84BFD94C1E8971B000118754 /* ZontExtension */,
+				84BFD9491E8971B000118754 /* Frameworks */,
+				3F32EEA5E06C41B4644681CE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		84BFD9301E89715600118754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BFD92F1E89715600118754 /* ZontWidget.app */,
+				84BFD9481E8971B000118754 /* ZontExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BFD9311E89715600118754 /* ZontWidget */ = {
+			isa = PBXGroup;
+			children = (
+				84D251821EBB8B3800CC6F27 /* ZontWidget.entitlements */,
+				844E1C3B1E93D57A00B68974 /* ViewModel */,
+				844E1C311E93A43100B68974 /* Helpers */,
+				844E1C2E1E93A1B900B68974 /* API */,
+				84BFD95B1E8B962900118754 /* Coordinator */,
+				84BFD95A1E8B961E00118754 /* View */,
+				84BFD9321E89715600118754 /* AppDelegate.swift */,
+				844E1C401E95028D00B68974 /* Constants.swift */,
+				84BFD9391E89715600118754 /* Assets.xcassets */,
+				84BFD93B1E89715600118754 /* LaunchScreen.storyboard */,
+				84BFD93E1E89715600118754 /* Info.plist */,
+			);
+			path = ZontWidget;
+			sourceTree = "<group>";
+		};
+		84BFD9491E8971B000118754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84BFD9301E89715600118754 /* Products */,
+				84BFD94A1E8971B000118754 /* NotificationCenter.framework */,
+				0B800B02EBED2503ABA2C1E0 /* Pods_ZontExtension.framework */,
+				71FE9C47C957896AF18D38C7 /* Pods_ZontWidget.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84BFD94C1E8971B000118754 /* ZontExtension */ = {
+			isa = PBXGroup;
+			children = (
+				84D251831EBB8BC700CC6F27 /* ZontExtension.entitlements */,
+				84BFD94F1E8971B000118754 /* MainInterface.storyboard */,
+				84BFD9521E8971B000118754 /* Info.plist */,
+				5860339DAC2E31ED5F658CB9 /* View */,
+				586032D62D9678E2C1730835 /* ViewModel */,
+			);
+			path = ZontExtension;
+			sourceTree = "<group>";
+		};
+		84BFD95A1E8B961E00118754 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84BFD9341E89715600118754 /* ViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84BFD95B1E8B962900118754 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				84BFD95C1E8B96A800118754 /* Coordinator.swift */,
+				84564F791E8B9C6F00DE618C /* AppCoordinator.swift */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BFD92E1E89715600118754 /* ZontWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BFD9411E89715600118754 /* Build configuration list for PBXNativeTarget "ZontWidget" */;
+			buildPhases = (
+				90DA1DEFEC3FAD8EEC5DD0F3 /* [CP] Check Pods Manifest.lock */,
+				84BFD92B1E89715600118754 /* Sources */,
+				84BFD92C1E89715600118754 /* Frameworks */,
+				84BFD92D1E89715600118754 /* Resources */,
+				84BFD9591E8971B000118754 /* Embed App Extensions */,
+				FFA1776735BE332B3D80E4BD /* [CP] Embed Pods Frameworks */,
+				72E132640318BD28E7A54B9E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84BFD9541E8971B000118754 /* PBXTargetDependency */,
+			);
+			name = ZontWidget;
+			productName = ZontWidget;
+			productReference = 84BFD92F1E89715600118754 /* ZontWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84BFD9471E8971B000118754 /* ZontExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BFD9561E8971B000118754 /* Build configuration list for PBXNativeTarget "ZontExtension" */;
+			buildPhases = (
+				F865245A251FD5D0C116876E /* [CP] Check Pods Manifest.lock */,
+				84BFD9441E8971B000118754 /* Sources */,
+				84BFD9451E8971B000118754 /* Frameworks */,
+				84BFD9461E8971B000118754 /* Resources */,
+				AE4EFA44B9FAF2E5616C4B88 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZontExtension;
+			productName = ZontExtension;
+			productReference = 84BFD9481E8971B000118754 /* ZontExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BFD9271E89715600118754 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ra1ph;
+				TargetAttributes = {
+					84BFD92E1E89715600118754 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TDDJW8TB7Z;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+					84BFD9471E8971B000118754 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TDDJW8TB7Z;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 84BFD92A1E89715600118754 /* Build configuration list for PBXProject "ZontWidget" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84BFD9261E89715600118754;
+			productRefGroup = 84BFD9301E89715600118754 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BFD92E1E89715600118754 /* ZontWidget */,
+				84BFD9471E8971B000118754 /* ZontExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84BFD92D1E89715600118754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BFD93D1E89715600118754 /* LaunchScreen.storyboard in Resources */,
+				84BFD93A1E89715600118754 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BFD9461E8971B000118754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BFD9511E8971B000118754 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72E132640318BD28E7A54B9E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZontWidget/Pods-ZontWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90DA1DEFEC3FAD8EEC5DD0F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE4EFA44B9FAF2E5616C4B88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZontExtension/Pods-ZontExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F865245A251FD5D0C116876E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA1776735BE332B3D80E4BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZontWidget/Pods-ZontWidget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BFD92B1E89715600118754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84564F7A1E8B9C6F00DE618C /* AppCoordinator.swift in Sources */,
+				844E1C351E93A78300B68974 /* APIClient.swift in Sources */,
+				844E1C3F1E94F76000B68974 /* ZontZTC700Device.swift in Sources */,
+				844E1C331E93A44900B68974 /* Extensions.swift in Sources */,
+				84BFD9351E89715600118754 /* ViewController.swift in Sources */,
+				84BFD9331E89715600118754 /* AppDelegate.swift in Sources */,
+				844E1C301E93A1F900B68974 /* ZontManager.swift in Sources */,
+				844E1C3D1E93D5B500B68974 /* DevicesViewModel.swift in Sources */,
+				844E1C3A1E93C1E200B68974 /* ZontError.swift in Sources */,
+				844E1C381E93B23100B68974 /* ZontDevice.swift in Sources */,
+				84BFD95D1E8B96A800118754 /* Coordinator.swift in Sources */,
+				84D251851EBB99D700CC6F27 /* ZontSetIOPortResult.swift in Sources */,
+				844E1C411E95028D00B68974 /* Constants.swift in Sources */,
+				586030186A2A6D177E802693 /* ZontExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BFD9441E8971B000118754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5860374EDEE87E3215F2F55C /* ZontError.swift in Sources */,
+				58603871987FD5C2C700488D /* ZontDevice.swift in Sources */,
+				586034C3A16047C089D95C6C /* APIClient.swift in Sources */,
+				58603DBFA30D3802DCD25834 /* ZontZTC700Device.swift in Sources */,
+				58603BE5FBF0C9C893635BDB /* ZontManager.swift in Sources */,
+				84D251861EBB9F6A00CC6F27 /* ZontSetIOPortResult.swift in Sources */,
+				58603E6E5C6B91B6CA574E63 /* TodayViewController.swift in Sources */,
+				58603D050D459371074A5CBB /* ZontExtensions.swift in Sources */,
+				5860373C7187D8D0CC71E4EA /* ZontExtensionViewModel.swift in Sources */,
+				58603CA748DE053D78B51B24 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84BFD9541E8971B000118754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84BFD9471E8971B000118754 /* ZontExtension */;
+			targetProxy = 84BFD9531E8971B000118754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84BFD93B1E89715600118754 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BFD93C1E89715600118754 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84BFD94F1E8971B000118754 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BFD9501E8971B000118754 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84BFD93F1E89715600118754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84BFD9401E89715600118754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84BFD9421E89715600118754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E8D0EF01A30BA96AB56C35 /* Pods-ZontWidget.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZontWidget/ZontWidget.entitlements;
+				DEVELOPMENT_TEAM = TDDJW8TB7Z;
+				INFOPLIST_FILE = ZontWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ra1ph.ZontWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		84BFD9431E89715600118754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958A83269B944429D6251D5D /* Pods-ZontWidget.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZontWidget/ZontWidget.entitlements;
+				DEVELOPMENT_TEAM = TDDJW8TB7Z;
+				INFOPLIST_FILE = ZontWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ra1ph.ZontWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		84BFD9571E8971B000118754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6021241F853C8909B6769757 /* Pods-ZontExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ZontExtension/ZontExtension.entitlements;
+				DEVELOPMENT_TEAM = TDDJW8TB7Z;
+				INFOPLIST_FILE = ZontExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ra1ph.ZontWidget.ZontExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		84BFD9581E8971B000118754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F73A893F3DBF3EDC06E77D8 /* Pods-ZontExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ZontExtension/ZontExtension.entitlements;
+				DEVELOPMENT_TEAM = TDDJW8TB7Z;
+				INFOPLIST_FILE = ZontExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ra1ph.ZontWidget.ZontExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BFD92A1E89715600118754 /* Build configuration list for PBXProject "ZontWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BFD93F1E89715600118754 /* Debug */,
+				84BFD9401E89715600118754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BFD9411E89715600118754 /* Build configuration list for PBXNativeTarget "ZontWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BFD9421E89715600118754 /* Debug */,
+				84BFD9431E89715600118754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BFD9561E8971B000118754 /* Build configuration list for PBXNativeTarget "ZontExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BFD9571E8971B000118754 /* Debug */,
+				84BFD9581E8971B000118754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84BFD9271E89715600118754 /* Project object */;
+}

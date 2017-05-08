@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (4.3.0)
+  - KeychainSwift (7.0.0)
+  - MBProgressHUD (1.0.0)
+  - RxCocoa (3.2.0):
+    - RxSwift (~> 3.1)
+  - RxSwift (3.2.0)
+  - SnapKit (3.1.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainSwift
+  - MBProgressHUD
+  - RxCocoa
+  - RxSwift
+  - SnapKit
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  KeychainSwift: b6947435dd78cc442c64a84ae648dd0e871cf448
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
+  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
+  SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 9b50ecd3710cd3f6bbfa0f2d6b76d5bbf5f6de83
+
+COCOAPODS: 1.2.0
